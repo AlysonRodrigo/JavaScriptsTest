@@ -1,6 +1,5 @@
 $(() => {
     let selectedRowIndex = -1;
-  
     $('#action-add').dxSpeedDialAction({
       label: 'Adicionar',
       icon: 'add',
@@ -28,7 +27,6 @@ $(() => {
       index: 3,
       visible: false,
       onClick() {
-        grid.editRow(selectedRowIndex);
         grid.deselectAll();
       },
     }).dxSpeedDialAction('instance');
@@ -54,6 +52,9 @@ $(() => {
   
         deleteSDA.option('visible', selectedRowIndex !== -1);
         editSDA.option('visible', selectedRowIndex !== -1);
+        grid.editRow(selectedRowIndex);
+        
+
       },
       columns: [
         {

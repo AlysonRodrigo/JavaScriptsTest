@@ -25,4 +25,12 @@
     display: inline-block;
     vertical-align: middle;
   }
-  
+  .navba {
+    background-color: rgb(54, 94, 120);
+  }  
+  .Modalss {
+    background-color: rgb(245, 245, 245);
+  }
+  .fa {
+    font-size: 20px;
+  }
