@@ -1,29 +1,10 @@
 $(() => {
-  $('#form').dxForm({
-    items: [{
-    }, {
-      itemType: 'group',
-      items: [{
-        itemType: 'tabbed',
-        tabs: [{
-          title: 'email',
-          items: ['Phone'],
-        }, {
-          title: 'Skype',
-          items: ['Skype'],
-        }, {
-          title: 'Email',
-          items: ['Email'],
-        }],
-      }],
-    }],
+  $("#Anime").click(function () {
+    $( "#Tab1" ).load( "../Html/testCopia.html" );
+    $( "#Tab1" ).toggle("slow");
+  });
+  $("#Formu").click(function () {
+    $("#Tab2").load("../Html/tables.html");
+    $("#Tab2").toggle("slow");
   });
 });
-
-
-const employees = {
-
-  Phone: '',
-  Email: '',
-  Skype: '',
-};

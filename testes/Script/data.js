@@ -82,18 +82,6 @@ $(() => {
         },
       ],
     }).dxDataGrid('instance');
-  
-    $('#direction').dxSelectBox({
-      dataSource: ['auto', 'cima', 'baixo'],
-      value: 'auto',
-      onSelectionChanged(e) {
-        DevExpress.config({
-          floatingActionButtonConfig: directions[e.selectedItem],
-        });
-  
-        DevExpress.ui.repaintFloatingActionButton();
-      },
-    });
   });
   
   
