@@ -1,10 +1,15 @@
 $(() => {
   $("#Anime").click(function () {
-    $( "#Tab1" ).load( "../Html/testCopia.html" );
-    $( "#Tab1" ).toggle("slow");
+    $("#Tab1").load("../Html/testCopia.html");
+    // $("#Tab1").toggle(display);
   });
   $("#Formu").click(function () {
     $("#Tab2").load("../Html/tables.html");
-    $("#Tab2").toggle("slow");
+    // $("p").toggle("slow");
+    // formModal.hide();
+  });
+  $("#Fecha").click(function () {
+    $("div").toggle("slow");
+    formModal.hide();
   });
 });
